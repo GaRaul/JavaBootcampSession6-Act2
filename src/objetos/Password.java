@@ -23,7 +23,7 @@ public class Password {
 		int min = 32; // 32 es el caracter ascii con numero mas bajo
 		int max = 126; // 126 lo mismo pero numero mas alto
 		
-		int rango = (126 - 32) + 1;
+		int rango = (max - min) + 1;
 
 		for (int i = 0; i < longitud; i++) {
 			num = (int)(Math.random() * rango) + min;
